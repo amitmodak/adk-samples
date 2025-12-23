@@ -54,6 +54,7 @@ logging.debug("deploying agent to agent engine:")
 
 remote_app = agent_engines.create(
     app,
+    display_name=root_agent.name,
     requirements=[
         "google-cloud-aiplatform[adk,agent-engines]==1.108.0",
         "google-adk==1.10.0",

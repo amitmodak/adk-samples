@@ -44,6 +44,7 @@ def create() -> None:
 
     remote_agent = agent_engines.create(
         adk_app,
+        display_name=root_agent.name,
         requirements=[f"./{AGENT_WHL_FILE}"],
         extra_packages=[f"./{AGENT_WHL_FILE}"],
     )
